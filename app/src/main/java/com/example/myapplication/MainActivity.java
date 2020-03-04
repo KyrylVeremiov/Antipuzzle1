@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.image_our_view35),
                 findViewById(R.id.image_our_view36)
         };
-        for(int i=0;i<imageViews.length;i++){
-            imageViews[i].setOnClickListener(new View.OnClickListener(){
+        for (ImageView imageView : imageViews) {
+            imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Log.d(TAG, "ImageView clicked!!!");
