@@ -10,7 +10,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG="MainActivity";
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -40,9 +40,20 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.image_our_view23),
                 findViewById(R.id.image_our_view24),
                 findViewById(R.id.image_our_view25),
+                findViewById(R.id.image_our_view26),
+                findViewById(R.id.image_our_view27),
+                findViewById(R.id.image_our_view28),
+                findViewById(R.id.image_our_view29),
+                findViewById(R.id.image_our_view30),
+                findViewById(R.id.image_our_view31),
+                findViewById(R.id.image_our_view32),
+                findViewById(R.id.image_our_view33),
+                findViewById(R.id.image_our_view34),
+                findViewById(R.id.image_our_view35),
+                findViewById(R.id.image_our_view36)
         };
-        for(int i=0;i<imageViews.length;i++) {
-            imageViews[i].setOnClickListener(new View.OnClickListener() {
+        for(int i=0;i<imageViews.length;i++){
+            imageViews[i].setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
                     Log.d(TAG, "ImageView clicked!!!");
